@@ -1,3 +1,3 @@
 # FoodRescue
-FoodRescue : Food Waste Awareness
- halo aku gabriel 
+FoodRescue : Food Waste Awareness 
+design dah ada di grup btw
