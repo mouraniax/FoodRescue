@@ -281,3 +281,514 @@ nav {
     max-width: 400px;
 }
 /* Batas Home.HTML */
+
+/* FOOD WASTE PAGE */
+ 
+
+.FoodWaste-page {
+    background: #fffdf1;
+    color: #006b3d;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* NAVBAR + HERO */
+
+.FW-atas {
+    min-height: 420px;
+    padding: 27px 4.4% 0;
+    background: #fff6e8;
+    position: relative;
+}
+
+.FW-nav {
+    width: 100%;
+    height: 63px;
+    margin: 0 auto;
+    padding: 0 38px 0 16px;
+    border-radius: 40px;
+    background: rgba(235, 235, 235, 0.78);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+}
+
+.FW-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.FW-logo img {
+    width: 49px;
+    height: 49px;
+    object-fit: contain;
+}
+
+.FW-logo h3 {
+    color: #087044;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.FW-menu {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+    height: 100%;
+}
+
+.FW-menu a {
+    color: #006b3d;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.FW-menu a.FW-active::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background: #ff8c4c;
+    bottom: 17px;
+    left: -3px;
+    right: -3px;
+}
+
+/* HERO */
+
+.FW-hero {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    gap: 0;
+    background-image: url(Assets/fw-template.jpeg);
+}
+
+.FW-hero-text {
+    width: 0;
+    position: relative;
+    flex: 1;
+}
+
+.FW-hero-text h1 {
+    color: #006b3d;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(64px, 6vw, 100px);
+    font-weight: 600;
+    line-height: 0.92;
+    letter-spacing: -1.5px;
+}
+
+.FW-hero-text h1 span {
+    color: #ff8c4c;
+}
+
+.FW-hero-text p {
+    color: #006b3d;
+    font-size: 27px;
+    line-height: 1.45;
+    margin-top: 19px;
+    font-weight: 400;
+}
+
+.FW-hero-text p strong {
+    font-weight: 700;
+}
+
+.FW-hero-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    position: relative;
+    left: 100px;
+    flex: 1;
+}
+
+
+/* =========================
+   PEMBAGIAN CONTENT
+========================= */
+
+.FW-content-atas {
+    width: 100%;
+    background: #fffdf1;
+}
+
+.FW-content-bawah {
+    width: 100%;
+    position: relative;
+    background: #fffdf1;
+    padding: 0 4.4% 220px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   CAUSES
+========================= */
+
+.FW-causes {
+    padding: 20px 4.4% 0;
+    background: #fffdf1;
+    position: relative;
+    z-index: 1;
+}
+
+/* HEADING + FOTO DAUN */
+
+.FW-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin: 0 10px 48px;
+}
+
+.FW-leaf {
+    width: 48px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.FW-section-heading h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 37px;
+    line-height: 1;
+    font-weight: 600;
+    color: #006b3d;
+}
+
+.FW-section-heading p {
+    color: #006b3d;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* CAUSE CARDS */
+
+.FW-cause-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.FW-cause-card {
+    background: #e9f3d3;
+    border-radius: 17px;
+    min-height: 230px;
+    padding: 7px 17px 18px;
+    text-align: center;
+    color: #006b3d;
+}
+
+.FW-cause-card img {
+    display: block;
+    width: 100%;
+    height: 118px;
+    object-fit: contain;
+    margin: 0 auto 3px;
+}
+
+.FW-cause-card h3 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 11px;
+    white-space: nowrap;
+}
+
+.FW-cause-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/* =========================
+   IMPACT
+========================= */
+
+.FW-impact {
+    padding: 23px 4.4% 0;
+    position: relative;
+    z-index: 1;
+    background: #fffdf1;
+}
+
+.FW-impact-heading {
+    margin-bottom: 25px;
+}
+
+.FW-impact-list {
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.FW-impact-row {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-height: 108px;
+    background: #e9f3d3;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.FW-impact-row > img {
+    width: 46%;
+    height: 108px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.FW-impact-text {
+    flex: 1;
+    padding: 6px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #006b3d;
+}
+
+.FW-impact-text h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 31px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.FW-impact-text p {
+    font-size: 17px;
+    line-height: 1.45;
+}
+
+
+/* =========================
+   SOCIAL
+========================= */
+
+.FW-social {
+    position: relative;
+    z-index: 2;
+    margin: 0 2%;
+    background: #e9f3d3;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   POHON BAGIAN BAWAH
+========================= */
+
+.FW-forest {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    z-index: 1;
+    overflow: hidden;
+    background: transparent;
+    pointer-events: none;
+}
+
+.FW-forest img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    background: transparent;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 760px) {
+
+    .FW-atas {
+        min-height: auto;
+        padding: 15px 4% 25px;
+    }
+
+    .FW-nav {
+        height: auto;
+        min-height: 60px;
+        padding: 8px 15px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .FW-menu {
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .FW-menu a {
+        font-size: 15px;
+    }
+
+    .FW-menu a.FW-active::after {
+        bottom: 0;
+    }
+
+    /* HERO */
+
+    .FW-hero {
+        min-height: 500px;
+        align-items: flex-start;
+        padding: 35px 5px 0;
+    }
+
+    .FW-hero-text {
+        width: 100%;
+    }
+
+    .FW-hero-text h1 {
+        font-size: clamp(43px, 11vw, 58px);
+    }
+
+    .FW-hero-text p {
+        font-size: 16px;
+    }
+
+    .FW-desktop-break {
+        display: none;
+    }
+
+    .FW-hero-image {
+        width: 100%;
+        height: 230px;
+        top: auto;
+        bottom: 0;
+        right: -4%;
+    }
+
+    .FW-hero-image img {
+        max-height: 220px;
+        margin-right: 20%;
+    }
+
+    /* HEADING */
+
+    .FW-section-heading {
+        gap: 12px;
+        margin: 0 0 25px;
+    }
+
+    .FW-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .FW-section-heading p {
+        font-size: 15px;
+    }
+
+    /* FOTO DAUN */
+
+    .FW-leaf {
+        width: 38px;
+        height: 45px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    /* CAUSE CARDS */
+
+    .FW-cause-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .FW-cause-card {
+        min-height: 210px;
+        padding: 8px 10px 14px;
+    }
+
+    .FW-cause-card img {
+        height: 105px;
+    }
+
+    .FW-cause-card h3 {
+        font-size: 16px;
+        white-space: normal;
+    }
+
+    .FW-cause-card p {
+        font-size: 12px;
+    }
+
+    /* IMPACT */
+
+    .FW-impact {
+        padding-top: 30px;
+    }
+
+    .FW-impact-list {
+        padding: 0;
+        gap: 12px;
+    }
+
+    .FW-impact-row {
+        min-height: 105px;
+    }
+
+    .FW-impact-row > img {
+        width: 40%;
+        height: 105px;
+    }
+
+    .FW-impact-text {
+        padding: 7px 9px;
+    }
+
+    .FW-impact-text h3 {
+        font-size: 24px;
+    }
+
+    .FW-impact-text p {
+        font-size: 12px;
+    }
+
+    /* POHON RESPONSIVE */
+
+    .FW-content-bawah {
+        padding-bottom: 140px;
+    }
+
+    .FW-forest {
+        height: 140px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .FW-menu a {
+        font-size: 13px;
+    }
+
+    .FW-impact-text h3 {
+        font-size: 21px;
+    }
+
+    .FW-impact-text p {
+        font-size: 11px;
+    }
+}
+
+/* Batas FoodWaste.HTML */
