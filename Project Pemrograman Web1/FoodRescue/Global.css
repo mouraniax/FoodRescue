@@ -1047,3 +1047,385 @@ z-index: 1;
             }
         }
 /* Batas Guid Html */
+
+
+/* Take Action */
+.action-page {
+    background-color: #fffcf0;
+    overflow-x: hidden;
+}
+
+/* ---------- NAVBAR ---------- */
+.action-page nav {
+    position: relative;
+    z-index: 3;
+    margin: 10px 0;
+    padding: 10px 5%;
+}
+
+/* Logo besar, tapi tinggi navbar tetap seperti semula */
+.action-page .logo img {
+    height: clamp(28px, 4vw, 56px);
+    width: auto;
+    margin: calc((30px - clamp(28px, 4vw, 56px)) / 2) 0;
+}
+
+.action-page .menu {
+    gap: 8px;
+}
+
+.action-page .menu a {
+    font-size: 9px;
+}
+
+.action-page .menu a.active {
+    font-weight: 600;
+    border-bottom: 3px solid #f49a57;
+    padding-bottom: 2px;
+}
+
+/* ---------- HERO ---------- */
+.action-hero {
+    position: relative;
+    padding: 10px 5% 0;
+    background: linear-gradient(#fff3df, #fffaec);
+    overflow: hidden;
+}
+
+.action-hero-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: min(100%, 1000px);
+    transform: translate(13.3%, -11.8%);
+    z-index: 0;
+}
+
+.action-hero-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.action-hero-body {
+    position: relative;
+    z-index: 1;
+    min-height: max(150px, calc(49vw - 52px));
+    padding: 10px 1% 60px;
+}
+
+.action-hero .Tengah-text {
+    max-width: 55%;
+}
+
+.action-hero .Tengah-text h1 {
+    font-size: clamp(26px, 6.5vw, 60px);
+    line-height: 1.1;
+}
+
+.action-hero .Tengah-text h1 span {
+    display: block;
+}
+
+.action-hero .Tengah-text p {
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.action-wave {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 40px;
+}
+
+/* ---------- ISI HALAMAN ---------- */
+.action-main {
+    margin: 0 auto;
+    padding: 25px 5% 10px;
+}
+
+.action-card-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-icon {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.action-main h2 {
+    color: #087044;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+/* ---------- CHECKLIST ---------- */
+.action-checklist {
+    padding: 12px 12px 14px;
+    background-color: #e8f2d3;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.action-checks {
+    list-style: none;
+    margin-top: 8px;
+    padding: 6px 14px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.action-checks li {
+    border-bottom: 1px solid #e3e8d8;
+}
+
+.action-checks li:last-child {
+    border-bottom: none;
+}
+
+.action-checks label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-family: Poppins, sans-serif;
+    font-size: 11px;
+    color: #087044;
+    cursor: pointer;
+}
+
+.action-checks input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    border: 1.5px solid #f49a57;
+    border-radius: 3px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.action-checks input[type="checkbox"]:checked {
+    background-color: #f49a57;
+}
+
+.action-checks input[type="checkbox"]:checked::after {
+    content: "\2713";
+    display: block;
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: center;
+}
+
+/* ---------- CHALLENGE + HABIT IDEAS ---------- */
+.action-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.action-challenge,
+.action-habits {
+    padding: 14px;
+    background-color: #e8f2d3;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.action-challenge h2 {
+    margin-top: 6px;
+}
+
+.action-challenge p {
+    margin: 10px 0 14px;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #087044;
+}
+
+.action-btn {
+    display: inline-block;
+    padding: 9px 14px;
+    border-radius: 30px;
+    background-color: #fb8412;
+    box-shadow: 0 0 0 3px rgba(251, 132, 18, 0.3);
+    color: #ffffff;
+    font-family: Poppins, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.action-tips {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.action-tips li {
+    position: relative;
+    padding: 0 0 8px 20px;
+    font-family: Poppins, sans-serif;
+    font-size: 11px;
+    line-height: 1.4;
+    color: #087044;
+}
+
+.action-tips li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f49a57;
+    font-weight: 700;
+}
+
+/* ---------- PENUTUP (FOOTER) ---------- */
+.action-cta {
+    position: relative;
+    margin-top: 50px;
+    color: #ffffff;
+}
+
+.action-cta-bg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.action-cta-text {
+    position: absolute;
+    top: 69%;
+    left: 37%;
+    width: 55%;
+    transform: translateY(-50%);
+    text-align: left;
+    z-index: 2;
+}
+
+.action-cta-text h2 {
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.action-cta-text p {
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* ---------- DESKTOP (layar >= 800px) ---------- */
+@media (min-width: 800px) {
+    .action-page nav {
+        padding: 20px 5%;
+    }
+
+    .action-page .menu {
+        gap: 35px;
+    }
+
+    .action-page .menu a {
+        font-size: 18px;
+    }
+
+    .action-hero-body {
+        min-height: min(calc(40vw - 40px), 355px);
+        padding: 40px 1% 120px;
+    }
+
+    .action-hero .Tengah-text {
+        max-width: 480px;
+    }
+
+    .action-hero .Tengah-text p {
+        font-size: 17px;
+    }
+
+    .action-wave {
+        height: 90px;
+    }
+
+    .action-main {
+        padding-top: 40px;
+    }
+
+    .action-main h2 {
+        font-size: 26px;
+    }
+
+    .action-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .action-checklist {
+        padding: 22px 26px 26px;
+        border-radius: 26px;
+    }
+
+    .action-checks {
+        padding: 10px 26px;
+    }
+
+    .action-checks label {
+        padding: 13px 0;
+        font-size: 16px;
+    }
+
+    .action-checks input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+    }
+
+    .action-checks input[type="checkbox"]:checked::after {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .action-row {
+        gap: 28px;
+        margin-top: 28px;
+    }
+
+    .action-challenge,
+    .action-habits {
+        padding: 26px;
+        border-radius: 26px;
+    }
+
+    .action-challenge p {
+        font-size: 16px;
+    }
+
+    .action-btn {
+        padding: 13px 24px;
+        font-size: 15px;
+    }
+
+    .action-tips li {
+        padding-bottom: 12px;
+        padding-left: 28px;
+        font-size: 16px;
+    }
+
+    .action-cta-text h2 {
+        font-size: 34px;
+    }
+
+    .action-cta-text p {
+        font-size: 20px;
+    }
+}
+/* Batas TakeAction css */
