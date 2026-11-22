@@ -282,9 +282,8 @@ nav {
 }
 /* Batas Home.HTML */
 
-/* FOOD WASTE PAGE */
- 
 
+/* FOOD WASTE PAGE */
 .FoodWaste-page {
     background: #fffdf1;
     color: #006b3d;
@@ -792,3 +791,259 @@ nav {
 }
 
 /* Batas FoodWaste.HTML */
+
+
+/* Guid Html */
+.guide-page {
+background-color: #fffcf0;
+overflow-x: hidden;
+}
+
+.guide-page nav {
+position: relative;
+z-index: 3;
+margin: 10px 0;
+padding: 10px 5%;
+}
+
+.guide-page .logo img {
+height: clamp(36px, 4vw, 56px);
+width: auto;
+margin: calc((30px - clamp(36px, 4vw, 56px)) / 2) 0;
+}
+
+.guide-page .logo h3 {
+font-size: 14px;
+}
+
+.guide-page .logo h3 span {
+color: #f49a57;
+}
+
+.guide-page .menu {
+gap: 16px;
+}
+
+.guide-page .menu a {
+font-size: 12px;
+}
+
+.guide-page .menu a.active {
+font-weight: 600;
+border-bottom: 3px solid #f49a57;
+padding-bottom: 2px;
+}
+
+.guide-hero {
+position: relative;
+padding: 10px 5% 0;
+background: linear-gradient(#fff3df, #fffaec);
+overflow: hidden;
+}
+
+.guide-hero-body {
+position: relative;
+z-index: 1;
+min-height: 170px;
+padding: 10px 1% 70px;
+}
+
+.guide-hero .Tengah-text {
+max-width: 55%;
+}
+
+.guide-hero .Tengah-text h1 {
+font-size: clamp(28px, 7.5vw, 60px);
+line-height: 1.1;
+}
+
+.guide-hero .Tengah-text h1 span {
+display: block;
+}
+
+.guide-hero .Tengah-text p {
+font-family: Poppins, sans-serif;
+font-size: 13px;
+line-height: 1.6;
+}
+
+.guide-fruit {
+position: absolute;
+top: 0;
+right: 0;
+width: min(100%, 1100px);
+z-index: 0;
+}
+
+.guide-fruit img {
+display: block;
+width: 100%;
+height: auto;
+}
+
+.guide-sparkle {
+position: absolute;
+top: 26%;
+left: 54%;
+width: 30px;
+height: 30px;
+}
+
+.guide-wave {
+position: absolute;
+left: 0;
+bottom: -1px;
+width: 100%;
+height: 45px;
+}
+
+.guide-list {
+display: grid;
+grid-template-columns: 1fr;
+gap: 14px;
+max-width: 900px;
+margin: 0 auto;
+padding: 15px 6% 10px;
+}
+
+.guide-card {
+display: flex;
+align-items: center;
+gap: 14px;
+min-height: 66px;
+padding: 14px 18px;
+background-color: #e8f2d3;
+border-radius: 14px;
+color: #087044;
+}
+
+.guide-card img {
+width: 28px;
+height: 28px;
+object-fit: contain;
+flex-shrink: 0;
+}
+
+.guide-card h2 {
+font-size: 17px;
+}
+
+.guide-cta {
+position: relative;
+margin-top: 40px;
+padding: 95px 10% 85px;
+text-align: center;
+color: #e8f2d3;
+}
+
+.guide-cta-bg {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+z-index: 0;
+}
+
+.guide-cta p {
+position: relative;
+z-index: 1;
+max-width: 330px;
+margin: 0 auto;
+font-size: 17px;
+font-weight: 700;
+line-height: 1.35;
+}
+
+.guide-sprig {
+position: absolute;
+bottom: 8px;
+width: 50px;
+height: 92px;
+z-index: 1;
+}
+
+.guide-sprig-left { left: 5%; transform: scaleX(-1); }
+.guide-sprig-right { right: 5%; }
+
+        @media (min-width: 800px) {
+            .guide-page nav {
+                padding: 20px 5%;
+            }
+
+            .guide-page .logo h3 {
+                font-size: 18px;
+            }
+
+            .guide-page .menu {
+                gap: 35px;
+            }
+
+            .guide-page .menu a {
+                font-size: 18px;
+            }
+
+            .guide-hero-body {
+                min-height: 330px;
+                padding: 40px 1% 120px;
+            }
+
+            .guide-hero .Tengah-text {
+                max-width: 480px;
+            }
+
+            .guide-hero .Tengah-text p {
+                font-size: 17px;
+            }
+
+            .guide-sparkle {
+                width: 50px;
+                height: 50px;
+            }
+
+            .guide-wave {
+                height: 90px;
+            }
+
+            .guide-list {
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+                max-width: 1100px;
+                padding-top: 30px;
+            }
+
+            .guide-card {
+                min-height: 160px;
+                padding: 30px 35px;
+                border-radius: 22px;
+            }
+
+            .guide-card img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .guide-card h2 {
+                font-size: 22px;
+            }
+
+            .guide-card:last-child {
+            grid-column: 1 / -1;
+            justify-self: center;
+            width: calc((100% - 24px) / 2);
+            }
+
+            .guide-cta {
+                padding: 170px 10% 150px;
+            }
+
+            .guide-cta p {
+                max-width: 700px;
+                font-size: 30px;
+            }
+
+            .guide-sprig {
+                width: 80px;
+                height: 150px;
+            }
+        }
+/* Batas Guid Html */
