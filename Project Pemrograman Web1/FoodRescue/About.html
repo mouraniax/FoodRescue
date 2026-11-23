@@ -3,9 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
+
+    <!-- Google Font: Poppins. The Seasons is used as a local font if provided. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
 </head>
-<body>
-    
+<body class="about-page">
+
+    <!-- SHARED HEADER: use this same header structure on every page. -->
+    <header class="site-header">
+        <a class="site-brand" href="Home.html" aria-label="FoodRescue home">
+            <img src="Assets/Logo.jpeg" alt="">
+            <span>FoodRescue</span>
+        </a>
+
+        <nav class="site-navigation" aria-label="Main navigation">
+            <a href="Home.html">Home</a>
+            <a href="FoodWaste.html">Food Waste</a>
+            <a href="Guide.html">Guide</a>
+            <a href="TakeAction.html">Take Action</a>
+            <a href="About.html" class="is-active" aria-current="page">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="about-hero">
+            <div class="about-hero-content">
+                <p class="about-eyebrow">ABOUT FOODRESCUE</p>
+                <h1>Together for a <span>Sustainable Future</span></h1>
+                <p class="about-hero-description">
+                    A student-driven initiative to reduce food waste and build
+                    more responsible food consumption habits for a better and
+                    more sustainable world.
+                </p>
+            </div>
+
+            <!-- Replace this image with your tree-branch hero asset. -->
+            <div class="about-hero-image">
+                <img src="Assets/about-hero-tree.png" alt="Green tree branches representing a sustainable future">
+            </div>
+        </section>
+
+        <!-- ABOUT, VISION AND MISSION -->
+        <section class="about-panel about-introduction">
+            <div class="about-section-title">
+                <span class="leaf-mark" aria-hidden="true">❧</span>
+                <h2>About FoodRescue</h2>
+            </div>
+
+            <div class="about-intro-grid">
+                <p class="about-description">
+                    FoodRescue is an educational website that provides
+                    knowledge, practical guidance, and real actions to raise
+                    awareness about food waste, especially among university
+                    students.
+                </p>
+
+                <article class="about-info-card">
+                    <div class="about-card-heading">
+                        <span class="about-symbol" aria-hidden="true">◎</span>
+                        <h3>Vision</h3>
+                    </div>
+                    <p>
+                        To build a more mindful and sustainable food
+                        consumption culture.
+                    </p>
+                </article>
+
+                <article class="about-info-card mission-card">
+                    <div class="about-card-heading">
+                        <span class="about-symbol" aria-hidden="true">⚑</span>
+                        <h3>Mission</h3>
+                    </div>
+                    <ul>
+                        <li>Educate about food waste and its impact.</li>
+                        <li>Provide practical and applicable guidance.</li>
+                        <li>Encourage real actions to reduce food waste.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- SDG CONTRIBUTION -->
+        <section class="about-panel sdg-section">
+            <div class="about-section-title">
+                <span class="leaf-mark" aria-hidden="true">❧</span>
+                <h2>Our Contribution to the SDGs</h2>
+            </div>
+
+            <div class="sdg-grid">
+                <article class="sdg-card">
+                    <img src="Assets/sdg-12.png" alt="Sustainable Development Goal 12: Responsible Consumption and Production">
+                    <p>
+                        Our main focus is encouraging more responsible and
+                        sustainable food use.
+                    </p>
+                </article>
+
+                <article class="sdg-card">
+                    <img src="Assets/sdg-2.png" alt="Sustainable Development Goal 2: Zero Hunger">
+                    <p>
+                        By helping reduce edible food waste and supporting
+                        food availability.
+                    </p>
+                </article>
+
+                <article class="sdg-card">
+                    <img src="Assets/sdg-13.png" alt="Sustainable Development Goal 13: Climate Action">
+                    <p>
+                        By minimizing food waste, we also help lower
+                        greenhouse gas emissions.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- FUTURE FEATURES -->
+        <section class="about-panel future-section">
+            <div class="about-section-title">
+                <span class="leaf-mark" aria-hidden="true">❧</span>
+                <h2>The Future of FoodRescue</h2>
+            </div>
+
+            <div class="future-grid">
+                <p class="future-description">
+                    FoodRescue will continue to grow into a more comprehensive
+                    platform that makes it easier to share and distribute
+                    surplus food.
+                </p>
+
+                <article class="future-feature-card">
+                    <span class="future-feature-icon" aria-hidden="true">⌖</span>
+                    <h3>Find Food</h3>
+                    <span class="coming-soon-label">Coming Soon</span>
+                </article>
+
+                <article class="future-feature-card">
+                    <span class="future-feature-icon" aria-hidden="true">▱</span>
+                    <h3>Donate Food</h3>
+                    <span class="coming-soon-label">Coming Soon</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- CLARIFICATION: CURRENTLY EDUCATIONAL ONLY -->
+        <aside class="platform-notice">
+            <span class="notice-symbol" aria-hidden="true">i</span>
+            <p>
+                <strong>Note:</strong> The current FoodRescue website is an
+                educational platform, not an active food donation marketplace.
+            </p>
+        </aside>
+    </main>
+
+    <!-- SHARED FOOTER: use the same footer structure on every page. -->
+    <footer class="site-footer">
+    <div class="footer-content">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+            <a href="Home.html" class="footer-logo">
+                <img src="Assets/Logo.jpeg" alt="FoodRescue Logo">
+                <span>FoodRescue</span>
+            </a>
+
+            <p>Rethink food. Reduce waste.</p>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="footer-navigation" aria-label="Footer navigation">
+            <a href="Home.html">Home</a>
+            <a href="FoodWaste.html">Food Waste</a>
+            <a href="Guide.html">Guide</a>
+            <a href="TakeAction.html">Take Action</a>
+            <a href="About.html">About</a>
+        </nav>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 FoodRescue</p>
+        <p>An educational initiative for sustainable food consumption.</p>
+    </div>
+</footer>
+
 </body>
 </html>
