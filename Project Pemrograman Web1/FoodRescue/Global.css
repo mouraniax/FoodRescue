@@ -1049,7 +1049,7 @@ z-index: 1;
 /* Batas Guid Html */
 
 
-/* Take Action */
+/* Take Acction  */
 .action-page {
     background-color: #fffcf0;
     overflow-x: hidden;
@@ -1291,6 +1291,136 @@ z-index: 1;
     font-weight: 700;
 }
 
+/* ---------- FORM DONASI ---------- */
+.action-form {
+    margin-top: 18px;
+    padding: 14px;
+    background-color: #e8f2d3;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.action-reminder {
+    padding: 10px 12px;
+    border-left: 4px solid #f49a57;   /* garis oranye */
+    border-radius: 8px;
+    background-color: #fff3df;        /* warna latar */
+    font-size: 11px;                  /* ukuran teks di HP */
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.action-form-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 10px;
+    padding: 14px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    font-family: Poppins, sans-serif;
+    color: #087044;
+}
+
+.action-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.action-field label {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.action-field input,
+.action-field select,
+.action-field textarea {
+    width: 100%;
+    min-height: 36px;
+    padding: 8px 12px;
+    border: 1.5px solid #c5dfad;
+    border-radius: 10px;
+    background-color: #fffcf0;
+    font-family: inherit;
+    font-size: 12px;
+    color: #087044;
+}
+
+.action-field textarea {
+    resize: vertical;
+}
+
+.action-field input:focus,
+.action-field select:focus,
+.action-field textarea:focus {
+    outline: 2px solid #f49a57;
+    outline-offset: 1px;
+    border-color: #f49a57;
+}
+
+.action-agree {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.action-agree input {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    accent-color: #f49a57;
+}
+
+button.action-btn {
+    border: none;
+    cursor: pointer;
+}
+
+#donation-form {
+    scroll-margin-top: 20px;
+}
+
+@media (min-width: 800px) {
+    .action-form {
+        margin-top: 28px;
+        padding: 22px 26px 26px;
+        border-radius: 26px;
+    }
+
+    .action-form-box {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 26px;
+    }
+
+    .action-form-box .full {
+        grid-column: 1 / -1;
+    }
+
+    .action-field label,
+    .action-agree {
+        font-size: 15px;
+    }
+
+    .action-field input,
+    .action-field select,
+    .action-field textarea {
+        min-height: 46px;
+        padding: 11px 14px;
+        font-size: 15px;
+    }
+
+    .action-agree input {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 /* ---------- PENUTUP (FOOTER) ---------- */
 .action-cta {
     position: relative;
@@ -1429,3 +1559,4 @@ z-index: 1;
     }
 }
 /* Batas TakeAction css */
+
