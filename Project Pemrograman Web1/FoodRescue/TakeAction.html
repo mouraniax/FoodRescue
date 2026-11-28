@@ -1,3 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Action | FoodRescue</title>
+    <link rel="stylesheet" href="Global.css">
+</head>
+<body class="action-page">
+
+    <header class="action-hero">
+        <div class="action-hero-img">
+            <img src="Assets/Action-hero.png" alt="A healthy lunch box">
+        </div>
+
+        <nav>
+            <div class="logo">
+                <img src="Assets/Logo.png" alt="FoodRescue">
+            </div>
+            <div class="menu">
+                <a href="Home.html">Home</a>
+                <a href="FoodWaste.html">Food Waste</a>
+                <a href="Guide.html">Guide</a>
+                <a href="TakeAction.html" class="active">Take Action</a>
+                <a href="About.html">About</a>
+            </div>
+        </nav>
+
+        <div class="action-hero-body">
+            <div class="Tengah-text">
+                <h1>Be Part of <span>The Change</span></h1>
+                <p>Start from simple, everyday habits to reduce food waste at home, in your student housing, or on a campus.</p>
+            </div>
+        </div>
+
+        <svg class="action-wave" viewBox="0 0 400 45" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 22C60 38 110 8 190 20C270 32 330 10 400 24V45H0Z" fill="#fffcf0"/>
+        </svg>
+    </header>
+
+    <main class="action-main">
+        <section class="action-checklist">
+            <div class="action-card-head">
+                <img class="action-icon" src="Assets/checklist.png" alt="">
+                <h2>Your Action Checklist</h2>
+            </div>
+
+            <ul class="action-checks">
+                <li><label><input type="checkbox"> Plan my meals for the week.</label></li>
+                <li><label><input type="checkbox"> Buy only what I really need.</label></li>
+                <li><label><input type="checkbox"> Store food properly.</label></li>
+                <li><label><input type="checkbox"> Take a reasonable portion.</label></li>
+                <li><label><input type="checkbox"> Share excess food with others.</label></li>
+                <li><label><input type="checkbox"> Separate food scraps for composting.</label></li>
+            </ul>
+        </section>
+
+        <div class="action-row">
+
+            <section class="action-challenge">
+                <img class="action-icon" src="Assets/Trophy.png" alt="">
+                <h2>7-Day Food Saving Challenge</h2>
+                <p>Challenge yourself for seven days to be more mindful with food!</p>
+                <a href="#" class="action-btn">Start The Challenge &rarr;</a>
+            </section>
+
+            <section class="action-habits">
+                <div class="action-card-head">
+                    <img class="action-icon" src="Assets/Leaf.png" alt="">
+                    <h2>Daily Habit Ideas</h2>
+                </div>
+
+                <ul class="action-tips">
+                    <li>Check and use food in the fridge.</li>
+                    <li>Bring a reusable food container.</li>
+                    <li>Choose the right portion at the cafeteria.</li>
+                    <li>Share extra food with friends.</li>
+                    <li>Try composting food scraps.</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="action-cta">
+        <img class="action-cta-bg" src="Assets/footer-bg.png" alt="">
+       
+        <div class="action-cta-text">
+            <h2>Small Habits, Big Change</h2>
+            <p>Let's reduce food waste together!</p>
+        </div>
+    </footer>
+
+</body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,6 +176,86 @@
             </section>
 
         </div>
+
+        <section class="action-form" id="donation-form">
+            <div class="action-card-head">
+                <img class="action-icon" src="Assets/Leaf.png" alt="">
+                <h2>Food Donation Registration (Preview)</h2>
+            </div>
+
+            <form class="action-form-box" action="#donation-form" method="get">
+                <p class="action-reminder full" lang="id">
+                    <strong>Reminder:</strong> This form is currently inactive as our website is still operating strictly as an educational platform. 
+                    This feature is coming soon.
+                </p>
+
+            <form class="action-form-box" action="#donation-form" method="get">
+                <div class="action-field">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required>
+                </div>
+
+                <div class="action-field">
+                    <label for="phone">Phone / WhatsApp</label>
+                    <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx" autocomplete="tel" required>
+                </div>
+
+                <div class="action-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+                </div>
+
+                <div class="action-field">
+                    <label for="food-type">Type of Food</label>
+                    <select id="food-type" name="food_type" required>
+                        <option value="" selected disabled>Choose a food type</option>
+                        <option value="cooked">Cooked Meals</option>
+                        <option value="fruit-vegetable">Fruits &amp; Vegetables</option>
+                        <option value="bakery">Bread &amp; Bakery</option>
+                        <option value="packaged">Packaged Food</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="action-field">
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="quantity" name="quantity" placeholder="e.g. 10 boxes or 5 kg" required>
+                </div>
+
+                <div class="action-field">
+                    <label for="best-before">Best Before</label>
+                    <input type="date" id="best-before" name="best_before" required>
+                </div>
+
+                <div class="action-field">
+                    <label for="delivery">Delivery Method</label>
+                    <select id="delivery" name="delivery" required>
+                        <option value="" selected disabled>Choose a method</option>
+                        <option value="pickup">Pick Up at My Address</option>
+                        <option value="drop-off">I Will Drop It Off</option>
+                    </select>
+                </div>
+
+                <div class="action-field">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Street, area, city" autocomplete="street-address" required>
+                </div>
+
+                <div class="action-field full">
+                    <label for="notes">Notes (optional)</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Tell us more about your donation"></textarea>
+                </div>
+
+                <label class="action-agree full">
+                    <input type="checkbox" name="agree" required>
+                    I confirm the food is safe and still fit to eat.
+                </label>
+
+                <div class="full">
+                    <button type="submit" class="action-btn">Register Donation &rarr;</button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer class="action-cta">
